@@ -11,7 +11,7 @@ pipeline {
                 NAME = "shadal"
             }
             steps {
-                sh = sleep(30)
+                sh = sleep(20)
                 echo "My name is ${NAME}"
                 
             }
