@@ -6,5 +6,15 @@ pipeline {
                 echo "runinng01"
             }
         }
+        stage ('Build') {
+            environment {
+                NAME = "shadal"
+            }
+            steps {
+                sh = sleep(15)
+                echo "My name is ${NAME}"
+                
+            }
+        }
     }
 }
